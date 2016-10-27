@@ -18,7 +18,47 @@ Choose an Alloy:
     <option>Silver</option>
     <option> TBD </option>
 </select>
-Cut Length:
+<p1 class="p1">
+    <table class="tb1">
+
+        <tr> <td id="inputDiameter"> Diameter     </td>  <td> <input type="text"   id="Diameter"     size = 15>       </td> </tr>
+        <tr> <td id="inputSpeed"> Machine Speed   </td>  <td> <input type="text"   id="MachineSpeed" size = 15>       </td> </tr>
+        <tr> <td id="inputLength"> Cut Length     </td>  <td> <input type="text"   id="CutLength"    size = 15>       </td> </tr>
+        <tr> <td id="Time"> Weight              </td>    <td> <input type="text"     id="Weight"     size = 15>     </td> </tr>
+    </table>
+
+    <input id="calc" type="button" value = "Calculate lbs/hr"
+           onclick = Calculate();>
+
+    <input id="clear" type="button" value = "Clear Calculator"
+           onclick = ClearInputs();ClearOutputs();>
+
+    </table>
+</p1>
+
+</table>
+<hr>
+<table class="tb2">
+    <tr> <td id = outputFtperLb> ft/lbs:           </td> <td> <div id="output1"> </div> </td> </tr>
+    <tr> <td id = outputLbsperHr> lbs/hr:            </td> <td> <div id="output2"> </div> </td> </tr>
+    <tr> <td id = outputPiecesPerPound> Pieces Per Pound:  </td> <td> <div id="output3"> </div> </td> </tr>
+    <tr> <td id = outputRunTime> Run Time (Hr):     </td> <td> <div id="output4"> </div> </td> </tr>
+</table>
+<br>
+
+<p2 class="p2">
+    <input id="alloyTable" type="button"  value = "Alloy Table">
+    <input id="mathLogic"  type="button"  value =  "Math Logic"
+           onclick="location.href='Math Logic.html';">
+</p2>
+
+<div id="Copyright"> Seth Serafini<br>
+    Logic Location Accessed by Button <br>
+    Alloy Density List Accessed by Button
+
+
+
+</div>
 
 
 
