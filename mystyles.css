@@ -1,0 +1,94 @@
+h1{
+    font-family: Kalinga;
+}
+.tb1 {
+    margin-left: 12px; color: slategray; font-family: Kalinga;
+    font-size: x-large;
+}
+.tb2 {
+    color: slategray;
+}
+html{
+    background-color: mintcream;
+}
+h1 {
+    color: slategray;
+}
+#Density {
+    background-color: slategray;
+    color: mintcream;
+    margin-left: 5%;
+}
+#Diameter{
+    background-color: slategray;
+    color: mintcream;
+    margin-left: 5%;
+}
+#MachineSpeed {
+    background-color: slategray;
+    color: mintcream;
+    margin-left: 5%;
+}
+#CutLength {
+    background-color: slategray;
+    color: mintcream;
+    margin-left: 5%;
+}
+#Weight {
+    background-color: slategray;
+    color: mintcream;
+    margin-left: 5%;
+}
+#output1{
+    margin-right: 120px;
+}
+#calc{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#clear {
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#Copyright {
+    position : fixed; bottom: 0; width: 100%; margin-left: 81.5%; font-family: Kalinga;
+}
+#alloyTable{
+    color:black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#mathLogic{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#outputFtperLb{
+    font-size: x-large;
+    font-family: Kalinga;
+}
+
+#outputLbsperHr{
+    font-size: x-large;
+    font-family: Kalinga;
+}
+
+h2{
+    color: slategray;
+    font-family: Kalinga;
+}
+
+.p3{
+    text-align: right;
+}
+
+#outputPiecesPerPound{
+    font-size: x-large;
+    font-family: Kalinga;
+}
+#outputRunTime{
+    font-size: x-large;
+    font-family: Kalinga;
+}
