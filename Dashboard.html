@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href=mystyles.css>
+    <script type = "text/javascript" src="scripts.js"></script>
     <title>Calculator Dashboard</title>
 </head>
 <body>
@@ -15,18 +16,22 @@
 Choose an Alloy:
 <select id = "alloyChoices">
     <option>304V  </option>
-    <option>304LV </option>
     <option>MP35N </option>
-    <option> 1058 </option>
+    <option>1058 </option>
+    <option> 1537 </option>
     <option> 455  </option>
     <option>316LVM</option>
-    <option> 1537 </option>
+    <option> 304LV </option>
 
 </select>
+
+<input id="confirmAlloy" type="button" value="Confirm Alloy"
+        onclick=displayDensity();>
+
 <p1 class="p1">
     <table class="tb1">
 
-        <tr> <td id="inputDiameter"> Diameter     </td>  <td> <div id="density">                         </div>       </td> </tr>
+        <tr> <td id="inputDiameter"> Diameter     </td>  <td> <div id="divDensity">                         </div>       </td> </tr>
         <tr> <td id="inputSpeed"> Machine Speed   </td>  <td> <input type="text"   id="MachineSpeed" size = 15>       </td> </tr>
         <tr> <td id="inputLength"> Cut Length     </td>  <td> <input type="text"   id="CutLength"    size = 15>       </td> </tr>
         <tr> <td id="Time"> Weight              </td>    <td> <input type="text"     id="Weight"     size = 15>       </td> </tr>
@@ -44,8 +49,8 @@ Choose an Alloy:
 </table>
 <hr>
 <table class="tb2">
-    <tr> <td id = outputFtperLb> ft/lbs:           </td> <td> <div id="output1"> </div> </td> </tr>
-    <tr> <td id = outputLbsperHr> lbs/hr:            </td> <td> <div id="output2"> </div> </td> </tr>
+    <tr> <td id = outputFtperLb> Ft/Lbs:           </td> <td> <div id="output1"> </div> </td> </tr>
+    <tr> <td id = outputLbsperHr> Lbs/Hr:            </td> <td> <div id="output2"> </div> </td> </tr>
     <tr> <td id = outputPiecesPerPound> Pieces Per Pound:  </td> <td> <div id="output3"> </div> </td> </tr>
     <tr> <td id = outputRunTime> Run Time (Hr):     </td> <td> <div id="output4"> </div> </td> </tr>
 </table>

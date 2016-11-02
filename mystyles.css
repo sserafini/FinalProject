@@ -92,3 +92,23 @@ h2{
     font-size: x-large;
     font-family: Kalinga;
 }
+
+#homePage{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+
+h3 {
+    color: slategray;
+    font-family: Kalinga;
+}
+.tb3{ color: slategray; font-family: Kalinga;
+    font-size: x-large; border: groove}
+
+#alloyChoices{
+    font-family: Kalinga;
+    color: black;
+    background-color: mintcream;
+
+}
