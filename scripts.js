@@ -2,6 +2,28 @@
  * Created by Seth Serafini on 11/2/2016.
  */
 
+function Calculate(){
+    var pi = 3.141592653589793238462643383279502884197;
+    var density = parseFloat(document.getElementById("divDensity").innerHTML);
+    var diameter =     
+}
+
+
+
+
+
+
+
+function validateInputs(){
+
+}
+
+
+
+
+
+
+
 function displayDensity(){
     var selectedAlloy = document.getElementById("alloyChoices").selectedIndex;
     var alloyChoice = "";
