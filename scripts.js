@@ -3,13 +3,20 @@
  */
 
 function Calculate(){
-    var pi = 3.141592653589793238462643383279502884197;
-    var density = parseFloat(document.getElementById("divDensity").innerHTML);
-    var diameter =     
+    var pi = 3.14159265358979323846264338327950288419716939937510;
+    var density = parseFloat($("alloyDensity").innerHTML);
+    var diameter = parseFloat($("Diameter").value);
+    var machineSpeed = parseFloat($("MachineSpeed").value);
+    var length = 12;
+    var cutLength  = parseFloat($("CutLength").value);
+    var weight = parseFloat($("Weight").value);
+
 }
 
 
-
+function $(element) {
+    return document.getElementById(element);
+}
 
 
 
@@ -18,11 +25,29 @@ function validateInputs(){
 
 }
 
+function ClearErrors(){
+    $("diameterValidation").innerHTML = "";
+    $("speedValidation").innerHTML = "";
+    $("lengthValidation").innerHTML = "";
+    $("timeValidation").innerHTML = "";
+}
 
+function ClearOutputs()
+{
+    $("output1").innerHTML = "";
+    $("output2").innerHTML = "";
+    $("output3").innerHTML = "";
+    $("output4").innerHTML = "";
+}
 
-
-
-
+function ClearInputs()
+{
+    $("alloyDensity").innerHTML = "";
+    $("Diameter").value = "";
+    $("MachineSpeed").value = "";
+    $("CutLength").value = "";
+    $("Weight").value = "";
+}
 
 function displayDensity(){
     var selectedAlloy = document.getElementById("alloyChoices").selectedIndex;
