@@ -2,16 +2,32 @@
  * Created by Seth Serafini on 11/2/2016.
  */
 
-function Calculate(){
-    var pi = 3.14159265358979323846264338327950288419716939937510;
-    var density = parseFloat($("alloyDensity").innerHTML);
-    var diameter = parseFloat($("Diameter").value);
-    var machineSpeed = parseFloat($("MachineSpeed").value);
-    var length = 12;
-    var cutLength  = parseFloat($("CutLength").value);
-    var weight = parseFloat($("Weight").value);
 
-}
+   function Calculate(){
+    //needed variables
+var pi = 3.14159265358979323846264338327950288419716939937510;
+var density = parseFloat($("divDensity").innerHTML);
+var diameter = parseFloat($("Diameter").value);
+var machineSpeed = parseFloat($("MachineSpeed").value);
+var length = 12;
+var cutLength  = parseFloat($("CutLength").value);
+var weight = parseFloat($("Weight").value);
+//step 2
+var piediv4 = pi/4;
+var diasquared = diameter * diameter;
+var lbsperft = density * length * piediv4 * diasquared;
+//step 3
+var ftperlb = 1/lbsperft;
+var lbperhr = machineSpeed * 60 / ftperlb;
+$("output1").innerHTML = ftperlb.toFixed(2);
+$("output2").innerHTML = lbperhr.toFixed(2);
+//step 4 (piece cut)
+
+Variance();
+
+
+
+   }
 
 
 function $(element) {
@@ -70,4 +86,10 @@ function displayDensity(){
     }
 document.getElementById("divDensity").innerHTML = alloyChoice;
 
+}
+
+function Variance(){
+  if($("output2").innerHTML < .10){
+$("divLbsperHrVariance").innerHTML = "Does Not Meet Standard Run Rates"
+  }
 }
