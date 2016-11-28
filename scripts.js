@@ -23,7 +23,9 @@ $("output1").innerHTML = ftperlb.toFixed(2);
 $("output2").innerHTML = lbperhr.toFixed(2);
 //step 4 (piece cut)
 
-Variance();
+    var pieceperlb = (ftperlb * 12) / cutLength;
+    $("output3").innerHTML = pieceperlb.toFixed(2);
+    Variance();
 
 
 
