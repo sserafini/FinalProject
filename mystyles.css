@@ -118,3 +118,16 @@ h3 {
     color: red;
     font-size: large;
 }
+
+#validateDiameter{
+    Color: red;
+}
+#speedValidation{
+    color: red;
+}
+#lengthValidation{
+    color: red;
+}
+#timeValidation{
+    color: red;
+}

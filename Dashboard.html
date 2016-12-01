@@ -31,10 +31,10 @@ Choose an Alloy:
 <p1 class="p1">
     <table class="tb1">
         <tr><td id="inputDensity"> Density </td> <td id="alloyDensity"><div id="divDensity">                         </div></td></tr>
-        <tr> <td id="inputDiameter"> Diameter     </td>  <td> <input type="text" id="Diameter" size = 15>             </td> </tr>
-        <tr> <td id="inputSpeed"> Machine Speed   </td>  <td> <input type="text"   id="MachineSpeed" size = 15>       </td> </tr>
-        <tr> <td id="inputLength"> Cut Length     </td>  <td> <input type="text"   id="CutLength"    size = 15>       </td> </tr>
-        <tr> <td id="Time"> Weight              </td>    <td> <input type="text"     id="Weight"     size = 15>       </td> </tr>
+        <tr> <td id="inputDiameter"> Diameter     </td>  <td> <input type="text" id="Diameter" size = 15> </td> <td><div id="validateDiameter"></div></td> </tr>
+        <tr> <td id="inputSpeed"> Machine Speed   </td>  <td> <input type="text"   id="MachineSpeed" size = 15>       </td><td><div id="speedValidation"></div></td> </tr>
+        <tr> <td id="inputLength"> Cut Length     </td>  <td> <input type="text"   id="CutLength"    size = 15>       </td> <td><div id="lengthValidation"></div></td> </tr>
+        <tr> <td id="Time"> Weight              </td>    <td> <input type="text"     id="Weight"     size = 15>       </td> <td><div id="timeValidation"></div></td> </tr>
     </table>
 
     <input id="calc" type="button" value = "Calculate lbs/hr"
