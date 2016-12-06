@@ -10,6 +10,7 @@ h1{
 }
 html{
     background-color: mintcream;
+
 }
 h1 {
     color: slategray;
@@ -19,6 +20,7 @@ h1 {
     color: mintcream;
     margin-left: 5%;
 }
+
 #Diameter{
     background-color: slategray;
     color: mintcream;
@@ -130,4 +132,25 @@ h3 {
 }
 #timeValidation{
     color: red;
+}
+
+#confirmAlloy{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#badgeNumber{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#whoUsed{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
+}
+#saveNumber{
+    color: black;
+    background-color: mintcream;
+    font-family: Kalinga;
 }

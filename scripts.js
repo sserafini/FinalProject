@@ -137,3 +137,13 @@ function validateTime(){
 
 
 }
+
+function BadgeNumber() {
+    var person = document.getElementById("badgeNumber").value;
+
+    localStorage.setItem("BADGE_NUMBER", person);
+
+}
+    function RetrieveNumbers() {
+        document.getElementById("Numbers").innerHTML = localStorage.getItem("BADGE_NUMBER");
+    }
